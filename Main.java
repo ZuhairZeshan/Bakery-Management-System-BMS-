@@ -154,6 +154,63 @@ class Main{
 
     }
 
+    public static void arrange_item(String file_name4){
+        int i=0;
+        int n=line_counter(file_name4);
+        String temp;
+        int[] temp1=new int[n];
+        String[] temp2=new String[n];
+        String[] temp3=new String[n];
+        
+
+        try {//////////////////////////////////////////// Read
+            File file = new File(file_name4); 
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNextLine()) {
+                temp = scanner.nextLine();
+                String[] line=temp.split(" ");
+                temp1[i]=Integer.parseInt(line[0]);
+                temp2[i]=line[1];
+                temp3[i]=line[2];
+                i++;
+            }
+            scanner.close(); 
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
+        }
+
+        for(int k=0;k<n-1;k++){
+            for(int l=0;l<n-1;l++){
+               if(temp1[l] > temp1[l+1]){
+                    int t1=temp1[l];
+                    temp1[l]=temp1[l+1];
+                    temp1[l+1]=t1;
+                    String t2=temp2[l];
+                    temp2[l]=temp2[l+1];
+                    temp2[l+1]=t2;
+                    String t3=temp3[l];
+                    temp3[l]=temp3[l+1];
+                    temp3[l+1]=t3;      
+               }
+            } 
+        }
+
+        try {//////////////////////////////////////////////////////////////Write
+            PrintWriter pw = new PrintWriter(file_name4);
+            
+            for(int j=0;j<n;j++){
+                pw.println(temp1[j] + " " + temp2[j] + " " + temp3[j]);
+            }
+
+            pw.close(); 
+        } catch (IOException e) {
+            System.out.println("IOException: " + e.getMessage());
+        }
+
+
+    }
+
 
     public static int line_counter(String filePath){
         int lineCount = 0;
@@ -235,7 +292,6 @@ class Main{
         }
 
     }
-
 
 
     public static void file_writing(String n,String file_line,int q,int a){
@@ -351,6 +407,7 @@ class Main{
                     System.out.println("Press 1 to Add New Item.");
                     System.out.println("Press 2 to Delete Item.");
                     System.out.println("Press 3 to Update Item.");
+                    System.out.println("Press 4 to Arrange Category.");
                     System.out.println("Press 5 when Done");
                     int option=input.nextInt();
 
@@ -483,6 +540,52 @@ class Main{
                         }
                     }else if(option == 5){/////////////////////////////////    Break
                         break;
+                    }else if(option == 4){
+                        while(true){
+                            int category_code=to_show();
+
+                            if(category_code == 1){
+                                obj2.show_fry_items();
+                                System.out.println("");
+                                System.out.println("");
+                                arrange_item("fry_items.txt");
+                            }else if(category_code == 2){
+                                obj2.show_frozen_items();
+                                System.out.println("");
+                                System.out.println("");
+                                arrange_item("frozen_items.txt");
+                            }else if(category_code == 3){
+                                obj2.show_cakes();
+                                System.out.println("");
+                                System.out.println("");
+                                arrange_item("cakes.txt");
+                            }else if(category_code == 4){
+                                obj2.show_sweets();
+                                System.out.println("");
+                                System.out.println("");
+                                arrange_item("sweets.txt");
+                            }else if(category_code == 5){
+                                obj2.show_nimco();
+                                System.out.println("");
+                                System.out.println("");
+                                arrange_item("nimco.txt");
+                            }else if(category_code == 0){
+                                break;
+                            }else{
+                                System.out.println("You have Entered a Wrong option");
+                                System.out.println("Please Try Again");
+                                System.out.println("");
+                                System.out.println("Press Any Key To Continue....");
+                                input.nextLine();
+                                input.nextLine();
+                            }
+                            
+                            System.out.println("Items Arranged");
+                            System.out.println("");
+                            System.out.println("Press Any Key To Continue....");
+                            input.nextLine();
+                            input.nextLine();
+                        }
                     }else{////////////////////////////////////////////////     Wrong Option
                         System.out.println("You have Entered a Wrong option");
                         System.out.println("Please Try Again");
@@ -575,7 +678,7 @@ class Main{
                         quantity5=new int[num5];
                         selection(num5,itemcode5,quantity5);
                         bill5=billing(num5,itemcode5,quantity5,counting5,"nimco.txt");
-                    }else if(item == 00){///////////////////////////////////////////////////////////update
+                    }else if(item == 6){///////////////////////////////////////////////////////////update
                         while(true){
                             System.out.print("\033[H\033[2J");
                             System.out.flush();
@@ -670,12 +773,8 @@ class Main{
                     }else{
                         System.out.println("You have Entered a Wrong option");
                         System.out.println("Please Try Again");
-                        System.out.println("");
-                        System.out.println("Press Any Key To Continue....");
-                        input.nextLine();
                     }
                     System.out.println("Press Any Key To Continue....");
-                    input.nextLine();
                     input.nextLine();
                 }
 
@@ -685,8 +784,7 @@ class Main{
                 System.out.println("You have Entered a Wrong option");
                 System.out.println("Please Try Again");
                 System.out.println("");
-                System.out.println("Press Any Key To Continue....");
-                input.nextLine();
+                
             }
             System.out.println("");
             System.out.println("Press Any Key To Continue....");

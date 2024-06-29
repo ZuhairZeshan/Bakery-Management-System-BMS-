@@ -1,4 +1,5 @@
 1 Red_Valvet_1p 600
 2 Chocolate_Chip_2p 1300
+3 Mango_Cake_1p 1200
 4 Caremel_Crunch_2p 1350
 5 Mango_Cake_2p 1300

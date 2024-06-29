@@ -1,15 +1,20 @@
-Zuhair_Zeshan 2 Chicken_Samosa 35 1 35
-Zuhair_Zeshan 2 Chicken_Samosa 35 1 35
-Zuhair_Zeshan 16 Gulab_Jaman_1kg 1400 2 2800
-TOTAL BILL = 2870
-
-Ahmed_Ali 5 Plain_Sandwich 100 2 200
-TOTAL BILL = 200
-
 Hassan_Ahmed 7 Vegetable_Roll_6pcs 550 2 1100
 Hassan_Ahmed 8 Chicken_Spocket_13pcs 750 2 1500
 TOTAL BILL = 2600
 
-Ali_Abdi 19 Shahi_Tukray_1kg 1350 1 1350
-TOTAL BILL = 1950
+Affan_Ahmed 1 Bread_Roll 40 1 40
+Affan_Ahmed 4 Chicken_Roll 45 1 45
+Affan_Ahmed 5 Sew_1pc 250 2 500
+TOTAL BILL = 585
+
+Maheen_Ahmed 5 Mango_Cake_2p 1300 1 1300
+TOTAL BILL = 1300
+
+zuhair 1 Salty_Chips_1pc 200 1 200
+TOTAL BILL = 200
+
+maheen 3 Barfi_1kg 1500 1 1500
+TOTAL BILL = 1500
+
+
 
