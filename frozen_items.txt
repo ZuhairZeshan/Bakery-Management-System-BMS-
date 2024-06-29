@@ -1,0 +1,6 @@
+1 Aloo_Samosa_12pcs 850
+2 Vegetable_Roll_6pcs 550
+3 Chicken_Spocket_13pcs 750
+4 Malai_Boti_Roll_12pcs 900
+5 Paneer_Roll_6pcs 650
+6 One_Bite_Samosa_12pcs 450

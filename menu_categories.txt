@@ -1,0 +1,7 @@
+1 Fry_Items
+2 Frozen_Items
+3 Cakes
+4 Sweets
+5 Nimco
+00 Update_Order
+0 Checkout

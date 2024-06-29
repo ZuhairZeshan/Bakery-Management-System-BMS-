@@ -1,0 +1,5 @@
+1 Salty_Chips_1pc 200
+2 Spicy Chips_1pc 200
+3 Gathiya_1pc 220
+4 Namak_Paray_1pc 230
+5 Sew_1pc 250

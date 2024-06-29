@@ -1,0 +1,5 @@
+1 Bread_Roll 40
+2 Chicken_Samosa 35
+3 Qeema_Samosa 35
+4 Chicken_Roll 45
+5 Plain_Sandwich 100
