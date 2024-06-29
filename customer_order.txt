@@ -7,14 +7,17 @@ Affan_Ahmed 4 Chicken_Roll 45 1 45
 Affan_Ahmed 5 Sew_1pc 250 2 500
 TOTAL BILL = 585
 
-Maheen_Ahmed 5 Mango_Cake_2p 1300 1 1300
-TOTAL BILL = 1300
+Hamiz_Siddiqi 1 Bread_Roll 40 2 80
+Hamiz_Siddiqi 1 Chicken_Samosa 35 1 35
+TOTAL BILL = 115
 
-zuhair 1 Salty_Chips_1pc 200 1 200
-TOTAL BILL = 200
-
-maheen 3 Barfi_1kg 1500 1 1500
-TOTAL BILL = 1500
+Jamshed_Ali 1 Bread_Roll 40 2 80
+TOTAL BILL = 80
 
 
+
+ZUhair_Zeshan 1 Bread_Roll 40 1 40
+ZUhair_Zeshan 4 Chicken_Roll 45 2 90
+ZUhair_Zeshan 1 Salty_Chips_1pc 200 2 400
+TOTAL BILL = 530
 
